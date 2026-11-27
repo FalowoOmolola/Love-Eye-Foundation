@@ -9,9 +9,9 @@ import MissionImg from "../assets/MissionImg.jpeg";
 import VisionImg from "../assets/VisionImg.jpeg";
 
 const stats = [
-  { value: "500+", label: "Families Helped" },
-  { value: "1k+", label: "Volunteers Engaged" },
-  { value: "300+", label: "Books Distributed" },
+  { value: "1k+", label: "Patients Helped" },
+  { value: "1k+", label: "Materials Dispensed" },
+  { value: "1k+", label: "Free Treatments" },
 ];
 
 const missionAndVision = [
@@ -72,7 +72,7 @@ export default function About() {
                 About Love Eye Foundation
               </span>
               <h1 className="mt-5 max-w-3xl text-4xl font-bold leading-tight sm:text-5xl">
-                Compassionate care for children, families, and communities.
+                Compassionate eye care for all.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
                 We make essential support easier to reach through eye care, learning support, and family welfare programs.
@@ -102,7 +102,7 @@ export default function About() {
             <motion.div variants={cardList} className="grid gap-4 sm:grid-cols-[1fr_0.8fr]">
               <motion.img variants={cardReveal} src={AboutImg} alt="Community outreach" className="motion-drift h-96 w-full rounded-xl object-cover" />
               <div className="grid gap-4">
-                <motion.img variants={cardReveal} src={AboutImg2} alt="Children receiving support" className="motion-drift-alt h-56 w-full rounded-xl object-cover" />
+                {/* <motion.img variants={cardReveal} src={AboutImg2} alt="Children receiving support" className="motion-drift-alt h-56 w-full rounded-xl object-cover" /> */}
                 <motion.div variants={cardReveal} className="motion-glow rounded-xl bg-[#10142f] p-6 text-white">
                   <p className="text-4xl font-bold">500+</p>
                   <p className="mt-2 text-white/70">children and families supported</p>
@@ -146,17 +146,17 @@ export default function About() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <Link to="/services" className="shine-button motion-card mt-8 flex w-fit items-center gap-2 rounded-xl bg-[#10142f] px-5 py-3 font-semibold text-white">
+                  <Link to="/programs" className="shine-button motion-card mt-8 flex w-fit items-center gap-2 rounded-xl bg-[#10142f] px-5 py-3 font-semibold text-white">
                     <ArrowUpRight />
                   </Link>
-                  <Link to="/services" className="shine-button motion-card mt-8 flex w-fit items-center gap-2 rounded-xl bg-[#10142f] px-5 py-3 font-semibold text-white">
-                    View Our Services
+                  <Link to="/programs" className="shine-button motion-card mt-8 flex w-fit items-center gap-2 rounded-xl bg-[#10142f] px-5 py-3 font-semibold text-white">
+                    View Our programs
                   </Link>
                 </div>
               </motion.div>
 
               <motion.div
-                initial={{ opacity: 0, scale: 0.95, x: about.side === "right" ? 100 : -100 }}
+                initial={{ opacity: 0, scale: 0.95, x: about.side === "right" ? 30 : -100 }}
                 whileInView={{ opacity: 1, scale: 1, x: 0 }}
                 viewport={{ once: false, margin: "-100px" }}
                 transition={{ duration: 1.05, ease: "easeOut" }}

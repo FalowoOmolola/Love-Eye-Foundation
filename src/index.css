@@ -30,6 +30,34 @@
   }
 }
 
+.static-arc-gallery {
+  perspective: 1000px;
+}
+
+.static-arc-track {
+  transform-style: preserve-3d;
+}
+
+.static-arc-card {
+  flex: none;
+  backface-visibility: hidden;
+}
+
+.static-arc-card-1,
+.static-arc-card-6 {
+  transform: translateY(-30px) perspective(900px) rotateY(12deg) scale(0.94);
+}
+
+.static-arc-card-2,
+.static-arc-card-5 {
+  transform: translateY(5px) perspective(900px) rotateY(6deg) scale(0.98);
+}
+
+.static-arc-card-3,
+.static-arc-card-4 {
+  transform: translateY(24px) scale(1.02);
+}
+
 :root {
   --motion-blue: #10142f;
   --motion-glow: rgba(59, 130, 246, 0.28);

@@ -15,34 +15,13 @@ import AboutImg2 from "../assets/AboutImg2.jpeg";
 import HeroImg from "../assets/HeroImg.jpeg";
 
 const stats = [
-  { value: "500+", label: "Families Helped" },
-  { value: "1k+", label: "Volunteers Engaged" },
-  { value: "300+", label: "Free Treatments" },
+  { value: "1000+", label: "Patients Helped" },
+  { value: "1k+", label: "Materials Dispensed" },
+  { value: "1000+", label: "Free Treatments" },
 ];
 
 const programs = [
-  {
-    icon: Eye,
-    title: "Vision Outreach",
-    text: "Free eye checks, referrals, and early support for families.",
-    tone: "bg-blue-100 text-blue-700",
-  },
-  {
-    icon: GraduationCap,
-    title: "Education Support",
-    text: "School materials and mentoring for young learners.",
-    tone: "bg-amber-100 text-amber-700",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Child Welfare",
-    text: "Community-led care focused on dignity and safety.",
-    tone: "bg-emerald-100 text-emerald-700",
-  },
-];
-
-const causes = [
-  {
+   {
     icon: Eye,
     title: "Eye Screening",
     text: "Early checks for vision problems and eye disease.",
@@ -58,6 +37,8 @@ const causes = [
     text: "Bringing care directly to underserved communities.",
   },
 ];
+
+
 
 const workImages = [
   { image: AboutImg, title: "Vision outreach day" },
@@ -166,37 +147,6 @@ export default function HomeSections() {
                 </div>
                 <h3 className="text-2xl font-bold">{title}</h3>
                 <p className="mt-4 leading-7 text-slate-600">{text}</p>
-                <button className="mt-8 flex items-center gap-2 font-semibold text-blue-700">
-                  Learn More <ArrowUpRight size={17} />
-                </button>
-              </motion.article>
-            ))}
-          </motion.div>
-        </div>
-      </section>
-
-      <section className="bg-white px-5 py-16">
-        <div className="mx-auto max-w-7xl">
-          <motion.div variants={section} initial="hidden" whileInView="show" viewport={{ once: false }} className="flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-            <div>
-              <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">Our Causes</span>
-              <h2 className="mt-5 max-w-2xl text-3xl font-bold sm:text-4xl">
-                Clear goals for a better tomorrow.
-              </h2>
-            </div>
-            <Link to="/services" className="motion-card flex w-fit items-center gap-2 rounded-xl border border-slate-200 px-6 py-4 font-semibold">
-              See All Causes <ArrowUpRight size={18} />
-            </Link>
-          </motion.div>
-
-          <motion.div variants={cardList} initial="hidden" whileInView="show" viewport={{ once: false }} className="mt-10 grid gap-5 lg:grid-cols-3">
-            {causes.map(({ icon: Icon, title, text }) => (
-              <motion.article variants={card} key={title} className="stat-card motion-card rounded-lg bg-blue-50 p-6">
-                <div className="stat-icon-bloom mb-7 flex h-52 items-center justify-center rounded-lg bg-white">
-                  <Icon className="text-blue-700" size={70} strokeWidth={1.4} />
-                </div>
-                <h3 className="text-2xl font-bold">{title}</h3>
-                <p className="mt-3 leading-7 text-slate-600">{text}</p>
               </motion.article>
             ))}
           </motion.div>

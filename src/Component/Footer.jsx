@@ -12,7 +12,6 @@ const mainLinks = [
   { label: "Programs", to: "/programs" },
   { label: "Gallery", to: "/gallery" },
   { label: "Contact", to: "/contact" },
-  { label: "Services", to: "/services" },
 ];
 
 const utilityLinks = ["Faq", "Review", "Style Guide", "Licence", "Changelog"];
